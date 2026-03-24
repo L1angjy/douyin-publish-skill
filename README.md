@@ -1,4 +1,4 @@
-# 抖音/Douyin 自动发布skill
+# 抖音/Douyin 自动发上传+自动发布 skill
 
 - 开箱即用! 自动上传视频并发布到抖音创作者平台。适用于Openclaw, Claude Cowork, Codex等AI Agent应用.
 - 该Skill不包含任何外部指令, 可放心使用. 同时也可以根据不同工作流/业务逻辑进行调整.
