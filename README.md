@@ -104,22 +104,27 @@ AI 会自动完成全部流程。
 ## 常见问题
 
 **Q: 为什么提示需要登录？**
+
 A: 请确保 Chrome 已登录抖音创作者平台。AI 使用你 Chrome 的登录状态。
 
 **Q: 应该用 `target="host"` 还是 `target="sandbox"`？**
+
 A:
 - 用 `target="host"`：需要使用已有登录态，AI 控制你电脑的 Chrome
 - 用 `target="sandbox"`：需要隔离环境，不想暴露真实浏览器数据
 
 **Q: `profile="user"` 和不填 profile 有什么区别？**
+
 A:
 - 不填 profile：使用 OpenClaw 的隔离浏览器，需手动登录一次抖音
 - `profile="user"`：直接附加到你真实的 Chrome，会继承所有 cookies 和登录态，但需要你在电脑前
 
 **Q: 支持哪些视频格式？**
+
 A: 与抖音网页版支持格式相同，通常为 MP4、MOV 等常见格式。
 
 **Q: 可以设置定时发布吗？**
+
 A: 可以通过 Cron Job 等方式让AI Agent定时调用skill即可。
 
 ## 相关链接
