@@ -7,37 +7,31 @@
 ### OpenClaw
 
 ```bash
-# 方式一：使用 ClawHub CLI 安装
-clawhub install douyin-upload
-
 # 方式二：手动安装
 # 将 skill 文件夹复制到 ~/.openclaw/skills/
 ```
 
-### Claude Code
+### Claude Code / Claude CoWork
 
 ```bash
 # 将 skill 文件夹复制到 ~/.claude/skills/
 ```
 
-### Antigravity
+### Codex
 
 ```bash
-# 全局安装：将 skill 文件夹复制到 ~/.gemini/antigravity/skills/
-# 项目安装：将 skill 文件夹复制到 <项目目录>/.agent/skills/
+# 将 skill 文件夹复制到 ~/.codex/skills/
 ```
 
-### Cursor
+### 其他 AI Agent 应用
 
-```bash
-# 全局安装：将 skill 文件夹复制到 ~/.cursor/skills/
-# 项目安装：将 skill 文件夹复制到 <项目目录>/.cursor/skills/
+Skill 本质上是一个包含 `SKILL.md` 文件的文件夹。大多数 AI Agent 应用都支持以下目录结构：
+
 ```
-
-### Trae
-
-```bash
-# 项目安装：将 skill 文件夹复制到 <项目目录>/.agent/skills/
+~/.claude/skills/          # Claude Code/CoWork 全局
+~/.codex/skills/          # Codex 全局
+~/.openclaw/skills/       # OpenClaw 全局
+.agent/skills/            # 项目级 skill（多个应用通用）
 ```
 
 ## 准备工作（只需做一次）
