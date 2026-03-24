@@ -1,4 +1,4 @@
-# douyin-upload
+# 抖音/Douyin 自动发布skill
 
 自动上传视频到抖音创作者平台。
 
