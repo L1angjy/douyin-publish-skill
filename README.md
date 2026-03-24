@@ -1,6 +1,7 @@
 # 抖音/Douyin 自动发上传+自动发布 skill
 
-- 开箱即用! 自动上传视频并发布到抖音创作者平台。适用于Openclaw, Claude Cowork, Codex等AI Agent应用.
+- 无需依赖视觉模型: 直接通过 DOM 元素定位（snapshot + 文字匹配），无需截图分析，成本更低、速度更快、稳定性更高.
+- 开箱即用! 自动上传视频并发布到抖音创作者平台。适用于 Openclaw, Claude Cowork 等AI Agent应用(内置Browser Tool或者Chrome中安装了插件的).
 - 该Skill不包含任何外部指令, 可放心使用. 同时也可以根据不同工作流/业务逻辑进行调整.
 
 ## 安装 Skill
@@ -11,16 +12,10 @@
 # 将 skill 文件夹复制到 ~/.openclaw/skills/
 ```
 
-### Claude Code / Claude CoWork
+### Claude Code / Claude CoWork (需要Claude for Chrome 插件)
 
 ```bash
 # 将 skill 文件夹复制到 ~/.claude/skills/
-```
-
-### Codex
-
-```bash
-# 将 skill 文件夹复制到 ~/.codex/skills/
 ```
 
 ### 其他 AI Agent 应用
