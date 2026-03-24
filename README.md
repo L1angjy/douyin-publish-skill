@@ -7,7 +7,6 @@
 ### OpenClaw
 
 ```bash
-# 方式二：手动安装
 # 将 skill 文件夹复制到 ~/.openclaw/skills/
 ```
 
