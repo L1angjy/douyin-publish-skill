@@ -45,6 +45,35 @@ Skill 本质上是一个包含 `SKILL.md` 文件的文件夹。大多数 AI Agen
 
 **只需登录一次**，之后 AI 会自动继承你的登录状态。
 
+## target 参数选择(默认为host)
+
+OpenClaw Browser 工具支持不同的 `target` 参数，适用于不同场景：
+
+| target | 说明 | 适用场景 | 注意事项 |
+|--------|------|----------|----------|
+| `host` (默认)| 控制你电脑上的 Chrome | **推荐**：需要使用已有登录态 | 确保 Chrome 已登录抖音 |
+| `sandbox` | 独立的沙盒浏览器 | 隔离环境、保护隐私 | 无登录态，需要重新登录 |
+| `node` | 控制已连接的节点设备 | 远程控制手机/平板浏览器 | 需要先配对节点 |
+
+### profile 参数（仅 target="host" 时有效）
+
+| profile | 说明 | 适用场景 | 注意事项 |
+|---------|------|----------|----------|
+| 不填（默认） | 使用 `openclaw` 隔离浏览器 | **推荐**：安全稳定 | 需手动登录一次 |
+| `user` | 附加到你真实的 Chrome 会话 | 需要使用已保存的 cookies | 需要在电脑前批准提示 |
+
+### 推荐配置
+
+**日常使用（推荐）：**
+```javascript
+browser(action="navigate", target="host", url="...")
+```
+
+**隐私隔离：**
+```javascript
+browser(action="navigate", target="sandbox", url="...")
+```
+
 ## 使用方法
 
 告诉 AI：「帮我上传视频到抖音」并提供：
@@ -76,6 +105,16 @@ AI 会自动完成全部流程。
 
 **Q: 为什么提示需要登录？**
 A: 请确保 Chrome 已登录抖音创作者平台。AI 使用你 Chrome 的登录状态。
+
+**Q: 应该用 `target="host"` 还是 `target="sandbox"`？**
+A:
+- 用 `target="host"`：需要使用已有登录态，AI 控制你电脑的 Chrome
+- 用 `target="sandbox"`：需要隔离环境，不想暴露真实浏览器数据
+
+**Q: `profile="user"` 和不填 profile 有什么区别？**
+A:
+- 不填 profile：使用 OpenClaw 的隔离浏览器，需手动登录一次抖音
+- `profile="user"`：直接附加到你真实的 Chrome，会继承所有 cookies 和登录态，但需要你在电脑前
 
 **Q: 支持哪些视频格式？**
 A: 与抖音网页版支持格式相同，通常为 MP4、MOV 等常见格式。
