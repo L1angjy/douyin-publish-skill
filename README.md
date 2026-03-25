@@ -7,27 +7,30 @@
 
 ## 安装 Skill
 
-### OpenClaw
+### 从 ClawHub 安装（官方推荐）
+
+```bash
+# 1. 登录 ClawHub（浏览器认证）
+clawhub login
+
+# 2. 安装 skill
+openclaw skills install douyin-upload
+```
+
+> ClawHub 地址: https://clawhub.com
+
+### 手动安装
 
 ```bash
 # 将 skill 文件夹复制到 ~/.openclaw/skills/
+
+# 当然! 你也直接告诉你的 AI Agent: Hey, 请帮我在clawhub上安装 <douyin-auto-publish> 这个skill!
 ```
 
-### Claude Code / Claude CoWork (需要Claude for Chrome 插件)
+### 其他 AI Agent 手动安装
 
 ```bash
-# 将 skill 文件夹复制到 ~/.claude/skills/
-```
-
-### 其他 AI Agent 应用
-
-Skill 本质上是一个包含 `SKILL.md` 文件的文件夹。大多数 AI Agent 应用都支持以下目录结构：
-
-```
-~/.claude/skills/          # Claude Code/CoWork 全局
-~/.codex/skills/          # Codex 全局
-~/.openclaw/skills/       # OpenClaw 全局
-.agent/skills/            # 项目级 skill（多个应用通用）
+# 将 skill 文件夹复制到 ~/workspace/skills/
 ```
 
 ## 准备工作（只需做一次）
