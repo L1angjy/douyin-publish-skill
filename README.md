@@ -9,12 +9,13 @@
 
 ### 从 ClawHub 安装（官方推荐）
 
+
 ```bash
 # 1. 登录 ClawHub（浏览器认证）
 clawhub login
 
 # 2. 安装 skill
-openclaw skills install douyin-upload
+openclaw skills install douyin-auto-publish
 ```
 
 > ClawHub 地址: https://clawhub.com
